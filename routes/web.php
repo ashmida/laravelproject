@@ -24,3 +24,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/user/dashboard', function
 Route::middleware(['auth:sanctum', 'verified','authadmin'])->get('/admin/dashboard', function () {
     return view('admin.dashboard');
 })->name('admin.dashboard');
+
+Route::resource('searchbook', 'SearchbookController');
+Route::resource('addrating', 'AddRatingController');
