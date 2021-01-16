@@ -48,7 +48,7 @@ class AddRatingController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\AddRating  $addrating
      * @return \Illuminate\Http\Response
      */
     public function show(AddRating $addrating)
@@ -60,7 +60,7 @@ class AddRatingController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\AddRating  $addrating
      * @return \Illuminate\Http\Response
      */
     public function edit(AddRating $addrating)
@@ -72,7 +72,7 @@ class AddRatingController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\AddRating  $addrating
      * @return \Illuminate\Http\Response
      */
     public function update(UpdateAddRatingRequest $request, AddRating $addrating)
@@ -85,7 +85,7 @@ class AddRatingController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\AddRating  $addrating
      * @return \Illuminate\Http\Response
      */
     public function destroy(AddRating $addrating)

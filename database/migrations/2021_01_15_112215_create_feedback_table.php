@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAddRatingsTable extends Migration
+class CreateFeedbackTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreateAddRatingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('addrating', function (Blueprint $table) {
+        Schema::create('feedback', function (Blueprint $table) {
             $table->id();
-            $table->string('Title');
+            $table->string('description');
             $table->timestamps();
+            
         });
     }
 
@@ -27,6 +28,6 @@ class CreateAddRatingsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('addrating');
+        Schema::dropIfExists('feedback');
     }
 }
