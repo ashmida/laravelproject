@@ -13,7 +13,7 @@ class CreateAddRatingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('add_ratings', function (Blueprint $table) {
+        Schema::create('addrating', function (Blueprint $table) {
             $table->id();
             $table->string('Title');
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateAddRatingsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('add_ratings');
+        Schema::dropIfExists('addrating');
     }
 }

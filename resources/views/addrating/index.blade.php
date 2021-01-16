@@ -32,11 +32,11 @@
                                 @foreach ($addrating as $addrating)
                                     <tr>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                            {{ $addrating->id }}
+                                            {{ $addrating->Title }}
                                         </td>
 
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                            {{ $addrating->title }}
+                                            {{ $addrating->Rating }}
                                         </td>
 
                                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
