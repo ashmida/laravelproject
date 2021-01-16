@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Searchbook extends Model
 {
     use HasFactory;
+    protected $fillable = ['book'];
 }
