@@ -28,6 +28,11 @@
                         {{ __('Add Rating') }}
                     </x-jet-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('addbooks.index') }}" :active="request()->routeIs('addbooks.index')">
+                        {{ __('Add Books') }}
+                    </x-jet-nav-link>
+                </div>
 
             </div>
 
