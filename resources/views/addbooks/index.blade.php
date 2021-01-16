@@ -21,7 +21,7 @@
                                         Book ID
                                     </th>
                                     <th scope="col" class="px-6 py-3 bg-gray-50 ">
-                                        Book Details
+                                        Book Name and Details
                                     </th>
                                     <th scope="col" width="200" class="px-6 py-3 bg-gray-50">
                                     Update Books Details

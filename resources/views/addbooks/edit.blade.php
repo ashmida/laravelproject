@@ -8,12 +8,12 @@
     <div>
         <div class="max-w-4xl mx-auto py-10 sm:px-6 lg:px-8">
             <div class="mt-5 md:mt-0 md:col-span-2">
-                <form method="post" action="{{ route('addbooks.update', $addbooks->id ) }}">
+                <form method="post" action="{{ route('addbooks.update', $addbooks->id) }}">
                     @csrf
                     @method('PUT')
                     <div class="shadow overflow-hidden sm:rounded-md">
                         <div class="px-4 py-5 bg-white sm:p-6">
-                            <label for="description" class="block font-medium text-sm text-gray-700">Description</label>
+                            <label for="description" class="block font-medium text-sm text-gray-700">Details</label>
                             <input type="text" name="description" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
                                    value="{{ old('description', $addbooks->description) }}" />
                             @error('description')
