@@ -12,10 +12,10 @@
                     @csrf
                     <div class="shadow overflow-hidden sm:rounded-md">
                         <div class="px-4 py-5 bg-white sm:p-6">
-                            <label for="title" class="block font-medium text-sm text-gray-700">Title</label>
-                            <input type="text" name="title" id="title" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
-                                   value="{{ old('title', '') }}" />
-                            @error('title')
+                            <label for="Title" class="block font-medium text-sm text-gray-700">Title</label>
+                            <input type="text" name="Title" id="Title" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                                   value="{{ old('Title', '') }}" />
+                            @error('Title')
                                 <p class="text-sm text-red-600">{{ $message }}</p>
                             @enderror
                         </div>
