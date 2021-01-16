@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FeedbackController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,4 @@ Route::middleware(['auth:sanctum', 'verified','authadmin'])->get('/admin/dashboa
 Route::resource('searchbook', \App\Http\Controllers\SearchbookController::class);
 Route::resource('addrating', \App\Http\Controllers\AddRatingController::class);
 Route::resource('addbooks', \App\Http\Controllers\AddBookController::class);
+Route::resource('feedback', FeedbackController::class);
