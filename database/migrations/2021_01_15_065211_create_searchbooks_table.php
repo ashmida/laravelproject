@@ -13,7 +13,7 @@ class CreateSearchbooksTable extends Migration
      */
     public function up()
     {
-        Schema::create('searchbooks', function (Blueprint $table) {
+        Schema::create('searchbook', function (Blueprint $table) {
             $table->id();
             $table->string('Book');
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateSearchbooksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('searchbooks');
+        Schema::dropIfExists('searchbook');
     }
 }
