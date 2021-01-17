@@ -54,6 +54,7 @@ class AddbookController extends Controller
      */
     public function show(addbooks $addbooks)
     {
+        
         return view('addbooks.show', compact('addbooks'));
     }
 
@@ -65,6 +66,7 @@ class AddbookController extends Controller
      */
     public function edit(addbooks $addbooks)
     {
+       
         return view('addbooks.edit', compact('addbooks'));
     }
 
