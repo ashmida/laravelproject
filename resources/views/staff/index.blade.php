@@ -1,4 +1,4 @@
-@extends('base') 
+
 @section('main')
 <div class="row">
 
