@@ -21,7 +21,5 @@ Route::resource('searchbook', \App\Http\Controllers\SearchbookController::class)
 Route::resource('addrating', \App\Http\Controllers\AddRatingController::class);
 Route::resource('addbooks', \App\Http\Controllers\AddBookController::class);
 Route::resource('feedback', \App\Http\Controllers\FeedbackController::class);
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/home/create', [App\Http\Controllers\HomeController::class, 'create'])->name('user.create');
 Route::get('/staff', 'App\Http\Controllers\staffController@index');
 Route::resource('staffs', 'App\Http\Controllers\staffController');

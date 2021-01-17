@@ -35,10 +35,10 @@
             <td>{{$staff->User_email}}</td>
             <td>{{$staff->User_id}}</td>
             <td class="text-center">
-                <a href="{{ route('staffs.edit',$staff->Game_id)}}" class="btn btn-primary btn-block">Edit</a>
+                <a href="{{ route('staffs.edit',$staff->No)}}" class="btn btn-primary btn-block">Edit</a>
             </td>
             <td class="text-center">
-                <form action="{{ route('staffs.destroy', $staff->Game_id)}}" method="post">
+                <form action="{{ route('staffs.destroy', $staff->No)}}" method="post">
                   @csrf
                   @method('DELETE')
                   <button class="btn btn-danger btn-block" type="submit">Delete</button>
