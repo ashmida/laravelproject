@@ -22,4 +22,4 @@ Route::resource('addrating', \App\Http\Controllers\AddRatingController::class);
 Route::resource('addbooks', \App\Http\Controllers\AddBookController::class);
 Route::resource('feedback', \App\Http\Controllers\FeedbackController::class);
 Route::get('/staff', 'App\Http\Controllers\staffController@index');
-Route::resource('staff', 'App\Http\Controllers\staffController');
+Route::resource('staffs', \App\Http\Controllers\staffController::class);
