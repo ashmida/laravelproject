@@ -61,7 +61,7 @@ class AddRatingController extends Controller
      */
     public function show(AddRating $addrating)
     {
-        $addrating = AddRating::all();
+        /**$addrating = AddRating::all();**/
         return view('addrating.show', compact('addrating'));
     }
 
