@@ -29,7 +29,7 @@ class SearchbookController extends Controller
      */
     public function create()
     {
-        return view('searchbook.index');
+        return view('searchbook.create');
     }
 
     /**

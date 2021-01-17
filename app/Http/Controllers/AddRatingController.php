@@ -29,7 +29,7 @@ class AddRatingController extends Controller
      */
     public function create()
     {
-        return view('addrating.index');
+        return view('addrating.create');
     }
 
     /**
@@ -40,8 +40,16 @@ class AddRatingController extends Controller
      */
     public function store(StoreAddRatingRequest $request)
     {
-        addrating::create($request->validated());
+        /**addrating::create($request->validated());
+        return redirect()->route('addrating.index');**/
+        $this->validate($request, [
+            'Title' => 'required'
+        ]);
 
+        $addrating = new AddRating([
+            'Title' => $request->get('Title')
+        ]);
+        $addrating->save();
         return redirect()->route('addrating.index');
     }
 
