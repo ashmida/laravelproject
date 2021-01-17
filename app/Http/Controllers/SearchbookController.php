@@ -40,8 +40,17 @@ class SearchbookController extends Controller
      */
     public function store(StoreSearchbookRequest $request)
     {
-        searchbook::create($request->validated());
+        /**searchbook::create($request->validated());
+        return redirect()->route('searchbook.index');**/
 
+        $this->validate($request, [
+            'book' => 'required'
+        ]);
+
+        $searchbook = new Searchbook([
+            'book' => $request->get('book')
+        ]);
+        $searchbook->save();
         return redirect()->route('searchbook.index');
     }
 
