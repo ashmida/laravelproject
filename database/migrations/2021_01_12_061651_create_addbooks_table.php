@@ -14,7 +14,7 @@ class CreateAddbooksTable extends Migration
     public function up()
     {
         Schema::create('addbooks', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('description');
             $table->timestamps();
         });
