@@ -92,6 +92,6 @@ class AddbookController extends Controller
     public function destroy(addbooks $addbooks)
     {
         $addbooks->delete();
-        return redirects()->route('addbooks.index');
+        return redirect()->route('addbooks.index');
     }
 }
